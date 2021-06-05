@@ -26,7 +26,7 @@ nav{
 #barra{
     position: relative;
     float: left;
-    width: 600px;
+    width: 250px;
     height: 16px;
     padding: 2px;
     border: 1px solid #CCCCCC;
@@ -36,10 +36,11 @@ nav{
 }
 #progreso{
     position: absolute;
-    width: 0px;
+    width:250px;
     height: 16px;
-    background: orangered;
+    text-align: left;
     border-radius: inherit;
+    font-size: 15px;
 
 
 }
