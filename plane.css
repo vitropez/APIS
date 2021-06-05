@@ -1,12 +1,12 @@
 body{
     text-align: center;
+    background-image: url("images/confetti.png");
 }
-header, section, footer, aside, nav, article, figure, figcaption,
-hgroup{
-    display : block;
+body{
+    display: flex;
 }
 #reproductor{
-    width: 720px;
+
     margin: 20px auto;
     padding: 5px;
     background: #999999;
@@ -31,10 +31,21 @@ nav{
     padding: 2px;
     border: 1px solid #CCCCCC;
     background: #EEEEEE;
+    border-radius: 2em;
+
 }
 #progreso{
     position: absolute;
     width: 0px;
     height: 16px;
-    background: rgba(0,0,150,.2);
+    background: orangered;
+    border-radius: inherit;
+
+
+}
+.speaker{
+    width:20%;
+    margin-top: 5%;
+    margin: 20px auto;
+
 }
