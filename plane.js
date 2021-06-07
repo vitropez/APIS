@@ -7,12 +7,14 @@ function iniciar() {
     progreso=document.getElementById('progreso');
     reproducir.addEventListener('click', doblePlay, false);
     audio=document.getElementById('audio');
+
 }
 //al hacer click en el botón se ejecuta la función doblePlay que lleva
 //asociadas la función de encender el video y el audio
 function doblePlay(){
     presionarVideo();
     presionarAudio();
+    ver();
 }
 //si el video no está pausado o finalizado se pausará al presionarlo y cambiará
 //el texto a reproducir
@@ -49,13 +51,16 @@ function estado() {
             var total = parseInt(medio.currentTime * maximo / medio.duration);
             progreso.innerHTML += ("&#9992;&#65039;&#9992;&#65039;o");
 
-           if (total>560) {
+           if (total>=555) {
             progreso.innerHTML = ("");
            }
        }else
             {
                 reproducir.innerHTML = 'Reproducir';
             }
+
+
+
     }
 //la función iniciar se ejecutará cuando cargue la página
 window.addEventListener('load', iniciar, false);

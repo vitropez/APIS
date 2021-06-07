@@ -2,7 +2,7 @@ body{
     text-align: center;
     background-image: url("images/confetti.png");
 }
-body{
+#contenedor{
     display: flex;
 }
 #reproductor{
@@ -14,6 +14,7 @@ body{
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
+    display: none;
 }
 nav{
     margin: 5px 0px;
@@ -45,3 +46,4 @@ nav{
     margin: 20px auto;
 
 }
+

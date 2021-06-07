@@ -4,9 +4,12 @@
     <title>Reproductor de Video</title>
     <link rel="stylesheet" href="../plane.css">
     <script src="../plane.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
 
 </head>
 <body>
+<div id="contenedor">
 <img class="speaker" src="../images/antique.jpg">
 <section id="reproductor">
 
@@ -28,6 +31,19 @@
 
 </section>
 <img class="speaker" src="../images/antique.jpg">
+</div>
+<button type="button" id="mostrar">mostrar</button>
+<script type="text/javascript">
+    $("#mostrar").on ("click", function() {
+        if($("#reproductor").is(":hidden")){
+        $("#reproductor").slideDown("slow");
+            }else{
+            $("#reproductor").slideUp( "slow");
+
+        }
+    });
+
+</script>
 
 </body>
 </html>
